@@ -1,6 +1,7 @@
 # 99speedmart
 # Installing inside the Ec2
 
+#!/bin/bash
 yum update -y
 amazon-linux-extras install -y php8.2
 yum install -y httpd

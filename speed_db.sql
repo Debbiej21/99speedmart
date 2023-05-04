@@ -28,10 +28,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `quantity` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table speed_db.cart: ~1 rows (approximately)
-DELETE FROM `cart` WHERE id = NULL;
-INSERT INTO `cart` (`id`, `name`, `price`, `image`, `quantity`) VALUES
-	(NULL, 'Frozen Pizza', '7', 'food-2.png', 1);
+-- Data exporting was unselected.
 
 -- Dumping structure for table speed_db.order
 CREATE TABLE IF NOT EXISTS `order` (
@@ -50,8 +47,7 @@ CREATE TABLE IF NOT EXISTS `order` (
   `total_price` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table speed_db.order: ~0 rows (approximately)
-DELETE FROM `order` WHERE id = NULL;
+-- Data exporting was unselected.
 
 -- Dumping structure for table speed_db.products
 CREATE TABLE IF NOT EXISTS `products` (
@@ -61,17 +57,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table speed_db.products: ~8 rows (approximately)
-DELETE FROM `products` WHERE id = NULL;
-INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES
-	(NULL, 'Frozen Pizza', '7', 'food-2.png'),
-	(NULL, 'Frozen French Fries', '5', 'food-6.png'),
-	(NULL, 'Milo', '10', 'milo.png'),
-	(NULL, 'Coca Cola', '3', 'coke.png'),
-	(NULL, 'BREEZE LIQUID 2IN1 SILKY SAKURA REFILL 3.2KG', '17', 'Breeze Liquid 2in1 Silky Sakura Refill.jpg'),
-	(NULL, 'BREEZE LIQUID 2IN1 SILKY SAKURA REFILL 3.2KG', '17', 'Breeze Liquid 2in1 Silky Sakura Refill.jpg'),
-	(NULL, 'BREEZE LIQUID 2IN1 SILKY SAKURA REFILL 3.2KG', '17', 'Breeze Liquid 2in1 Silky Sakura Refill.jpg'),
-	(NULL, 'BREEZE LIQUID 2IN1 SILKY SAKURA REFILL 3.2KG', '17', 'Breeze Liquid 2in1 Silky Sakura Refill.jpg');
+-- Data exporting was unselected.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

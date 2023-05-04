@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+require 'config.php';
 
 if(isset($_POST['update_update_btn'])){
    $update_value = $_POST['update_quantity'];

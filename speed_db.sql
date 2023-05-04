@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table speed_db.cart: ~1 rows (approximately)
-DELETE FROM `cart`;
+DELETE FROM `cart` WHERE id = NULL;
 INSERT INTO `cart` (`id`, `name`, `price`, `image`, `quantity`) VALUES
 	(NULL, 'Frozen Pizza', '7', 'food-2.png', 1);
 
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table speed_db.order: ~0 rows (approximately)
-DELETE FROM `order`;
+DELETE FROM `order` WHERE id = NULL;
 
 -- Dumping structure for table speed_db.products
 CREATE TABLE IF NOT EXISTS `products` (
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table speed_db.products: ~8 rows (approximately)
-DELETE FROM `products`;
+DELETE FROM `products` WHERE id = NULL;
 INSERT INTO `products` (`id`, `name`, `price`, `image`) VALUES
 	(NULL, 'Frozen Pizza', '7', 'food-2.png'),
 	(NULL, 'Frozen French Fries', '5', 'food-6.png'),
